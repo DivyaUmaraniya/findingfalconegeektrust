@@ -1,0 +1,151 @@
+* {
+    font-family: monospace;
+}
+
+body{
+    background-image: url('background.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#selection{
+    width: 80%;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.list{
+    
+    display: flex; 
+    flex-direction: column; 
+    
+    align-items: center;   
+    min-width: 225px;  
+    min-height: 150px;
+
+    background-color:rgba(250, 235, 215, 0.3);
+    border-radius: 6px;
+}
+
+.list > * {
+    margin-bottom: 5px;
+}
+label{
+    font-size: 25px;
+    color: goldenrod;
+    font-weight: 700;
+}
+
+select {
+    width: 155px; 
+    border-radius: 20px;
+    padding: 4px;
+    background-color: rgba(60, 0, 55, 0.3);
+    font-weight: bolder;
+    color: ghostwhite;
+}
+select:hover{
+    background-color:rgba(50, 235, 215, 0.3) ;
+}
+option{
+    font-size: 19px;
+    font-weight: 400;
+    background-image: url('background.jpg');
+}
+
+table {
+    border: solid;
+    text-align: center; 
+    padding: 20px;
+    background-color: rgba(160, 0, 125, 0.2);
+}
+
+td {
+    border: dotted 2px;
+    border: groove;
+    color: navajowhite;
+}
+
+th {
+    margin: 50px;
+    border: groove;
+    padding: 5px;
+    color: ghostwhite;
+    font-weight: bolder;
+    
+}
+
+
+@media only screen and (max-width: 580px){
+    #selection{
+        flex-direction: column; 
+
+    }
+
+    .list{
+        margin-bottom: 10px; 
+       
+        align-items: center;
+    }
+
+}
+
+
+#trigger {
+    box-shadow: 5px 5px 5px black;
+    font-family: monospace;
+    display: block;
+    margin: 0 auto;
+    font-size: 25px;
+    font-weight: bolder;
+}
+#trigger:hover{
+    background-color: rgba(60, 0, 55, 0.3);
+}
+
+#trigger:active{
+    box-shadow: none ;
+    filter: 60%;
+}
+
+#time {
+    position: absolute; 
+    left: 30px;
+    top: 430px;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#total_time {
+    margin: 5px 0px 0px 5px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: cyan;
+}
+
+#result {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#inventory {
+    display: inline-block;
+    border: dotted;
+    margin-left: 15px;
+    margin-top: 180px;
+    font-size: larger;
+    padding: 10px;
+    background-color: rgba(250, 235, 215, 0.7);
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
+    text-align: center;
+  }
